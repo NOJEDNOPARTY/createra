@@ -20,7 +20,13 @@ var common = {
 
 	},
 	owl: function(){
-		
+		$('.reviews-slider').owlCarousel({
+			loop:true,
+			items: 1,
+			margin:0,
+			nav: true,
+			dots: false
+		})
 	},
 	typingText: function(){
 

@@ -184,6 +184,7 @@ header {
 
 
 .clients {padding: 127px 0 143px;}
+.partners {padding: 127px 0 118px;}
 
 	.clients .title {margin-bottom: 26px;}
 
@@ -284,6 +285,461 @@ header {
 .consulting {padding: 82px 0;}
 
 	.consulting  .btn {max-width: 372px;}
+
+/* solutions styles */
+
+.solutions {padding: 127px 0 150px;}
+
+	.solutions .title {margin-bottom: 59px;}
+
+	.solutions-question {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.solutions-question p {
+		margin-bottom: 30px;
+		font-family: 'TT Firs Neue-Light';
+		font-size: 25px;
+		line-height: 32px;
+		text-align: center;
+		color: #212121;
+	}
+
+	.solutions-question .btn {max-width: 246px;}
+
+	.solutions-list {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+		margin-bottom: 22px;
+	}
+
+	.solution {
+		width: 100%;
+		max-width: 350px;
+		margin-bottom: 42px;
+		padding: 37px 27px 40px 33px;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+		border-radius: 10px;
+	}
+
+	.solution-img {
+		width: 100%;
+		height: 79px;
+		margin-bottom: 9px;
+	}
+
+	.solution-img img {max-width: 100%;}
+
+	.solution-type {
+		margin-bottom: 4px;
+		font-family: 'TT Firs Neue-Regular';
+		font-size: 16px;
+		line-height: 21px;
+		color: #00C8D2;
+	}
+
+	.solution-title {
+		margin-bottom: 17px;
+		font-family: 'TT Firs Neue-Bold';
+		font-size: 25px;
+		line-height: 32px;
+		color: #212121;
+	}
+
+	.solution p {
+		height: 156px;
+		font-family: 'TT Firs Neue-Regular';
+		font-size: 20px;
+		line-height: 26px;
+		color: #212121;
+		display: -webkit-box;
+		-webkit-line-clamp: 6;
+		overflow: hidden;
+		-webkit-box-orient: vertical;
+	}
+
+
+/* metodics styles */
+
+.metodics {
+	padding: 127px 0 67px;
+	background-color: #F6F6F6;
+}
+
+	.metodics .title {margin-bottom: 45px;}
+
+	.metodics-cnt {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+
+	.metodics-text {
+		width: 100%;
+		max-width: 510px;
+		padding-right: 11px;
+	}
+
+	.metodics-bold-text {
+		margin-bottom: 8px;
+		font-family: 'TT Firs Neue-Bold';
+		font-size: 30px;
+		line-height: 39px;
+		color: #212121;
+	}
+
+	.metodics-medium-text {
+		margin-bottom: 25px;
+		font-family: 'TT Firs Neue-Light';
+		font-size: 25px;
+		line-height: 32px;
+		color: #212121;
+	}
+
+	.metodics-text p {
+		font-family: 'TT Firs Neue-Regular';
+		font-size: 20px;
+		line-height: 26px;
+		color: #212121;
+	}
+	.metodics-text p:not(:last-child) {margin-bottom: 25px;}
+
+	.metodics-list {
+		width: 100%;
+		max-width: 540px;
+	}
+
+	.metodics-list-title {
+		margin-bottom: 16px;
+		font-family: 'TT Firs Neue-Light';
+		font-size: 20px;
+		line-height: 26px;
+		color: #212121;
+	}
+
+	.metodics-items {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-flow: row wrap;
+		width: 100%;
+	}
+
+	.metodics-list-item {
+		width: 100%;
+		max-width: 248px;
+		margin-bottom: 13px;
+	}
+
+	.metodics-list-img {
+		display: flex;
+		align-items: flex-end;
+		margin-bottom: 6px;
+		width: 100%;
+		height: 70px;
+	}
+
+	.metodics-list-img img {max-width: 100%;}
+
+	.metodics-list-item p {
+		font-family: 'TT Firs Neue-Regular';
+		font-size: 18px;
+		line-height: 23px;
+		color: #212121;
+	}
+	
+
+	.metodics-list-item p span {font-family: 'TT Firs Neue-Bold';}
+
+	.metodics-links {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.metodics-links a{
+		display: inline-block;
+		width: 100%;
+		max-width: 248px;
+		font-family: 'TT Firs Neue-Regular';
+		font-size: 18px;
+		line-height: 23px;
+		text-decoration-line: underline;
+		color: #212121;
+	}
+
+	.metodics-links a:hover {text-decoration: none;}
+
+
+/* results styles */
+
+.results {
+	padding: 52px 0 49px;
+	background-color: #F6F6F6;
+}
+
+	.results .title {margin-bottom: 8px;}
+
+	.subtitle {
+		margin-bottom: 66px;
+		font-family: 'TT Firs Neue-Light';
+		font-size: 30px;
+		line-height: 39px;
+		text-align: center;
+		color: #212121;
+	}
+
+	.results-list {
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+		width: 100%;
+	}
+
+	.result {
+		margin-bottom: 26px;
+		padding: 25px 27px 40px 33px;
+	}
+
+	.result-img {
+		display: flex;
+		align-items: flex-end;
+		width: 100%;
+		height: 90px;
+		margin-bottom: 9px;
+	}
+
+	.result-title {margin-bottom: 20px;}
+
+	.list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	.list li {
+		position: relative;
+		padding-left: 30px;
+		font-family: 'TT Firs Neue-Regular';
+		font-size: 20px;
+		line-height: 26px;
+		color: #212121;
+	}
+
+	.list li:not(:last-child) {margin-bottom: 17px;}
+
+	.list li::before {
+		content: '';
+		position: absolute;
+		top: 6px;
+		left: 0;
+		display: block;
+		width: 20px;
+		height: 15px;
+		background-image: url('../images/check.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+
+
+/* team styles */
+
+.team {
+	padding: 128px 0 150px;
+	background-color: #F6F6F6;
+}
+
+	.team .title {margin-bottom: 7px;}
+
+	.team .subtitle {margin-bottom: 54px;}
+
+	.member {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.member:not(:last-child) {margin-bottom: 80px;}
+
+	.member-cnt {
+		width: 100%;
+		max-width: 570px;
+	}
+
+	.member .metodics-cnt:first-child {margin-right: 15px;}
+
+	.member-name {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-bottom: 35px;
+		font-family: 'TT Firs Neue-Bold';
+		font-size: 25px;
+		line-height: 32px;
+		color: #212121;
+	}
+
+	.member-name span {margin-right: 6px;}
+
+	.member-cnt p {
+		margin-bottom: 26px;
+		font-family: 'TT Firs Neue-Regular';
+		font-size: 20px;
+		line-height: 26px;
+		color: #212121;
+	}
+
+
+	.member-images {
+		width: 100%;
+		max-width: 445px;
+	}
+	
+	.member .metodics-images:first-child {margin-right: 15px;}
+
+	.member-img {margin-bottom: 62px;}
+
+	.member-img, .member-img img {width: 100%;}
+
+	.member-works {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.member-works div:not(:last-child) {margin-right: 5px;}
+
+
+
+/* reviews styles */
+
+
+.reviews {padding: 128px 0 150px;}
+
+	.reviews .title {margin-bottom: 6px;}
+
+	.reviews .subtitle {
+		padding-bottom: 39px;
+		margin-bottom: 0;
+	}
+
+	.reviews-slider {padding: 0 60px;}
+
+	.reviews-slider .owl-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.rev {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 920px;
+		margin: 25px;
+		padding: 30px 20px 77px 65px;
+		background-color: #ffffff;
+		box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+		border-radius: 11px;
+	}
+
+
+
+	.rev-text {
+		width: 100%;
+		max-width: 615px;
+	}
+
+	.rev-text p {
+		font-family: 'TT Firs Neue-Regular';
+		font-size: 20px;
+		line-height: 26px;
+		color: #212121;
+	}
+
+	.rev-text p:not(:last-child) {margin-bottom: 24px;}
+
+	.rev-info {
+		width: 100%;
+		max-width: 170px;
+	}
+
+	.rev-img {margin-bottom: 18px;}
+
+	.rev-img img {
+		width: auto !important;
+		max-width: 100%;
+	}
+
+	.rev-name {
+		margin-bottom: 6px;
+		font-family: 'TT Firs Neue-Bold';
+		font-size: 25px;
+		line-height: 32px;
+		color: #212121;
+	}
+
+	.rev-pos {
+		margin-bottom: 6px;
+		font-family: 'TT Firs Neue-Regular';
+		font-size: 14px;
+		line-height: 18px;
+		color: #898A8C;
+	}
+
+	.rev-links {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.rev-links a:first-child {margin-right: 4px;}
+
+	.reviews-slider .owl-nav span {display: none;}
+
+	.reviews-slider .owl-nav button {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-image: url('../images/arrow-left.svg') !important;
+		background-repeat: no-repeat !important;
+		background-position: center !important;
+	}
+
+	.reviews-slider .owl-nav button.owl-prev {left: 0;}
+	.reviews-slider .owl-nav button.owl-next {
+		right: 0;
+		transform: rotate(180deg);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
