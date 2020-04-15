@@ -6,10 +6,11 @@ var common = {
 	},
 	main: function(){
 
-		// $('.menu-trigger').click(function(event){
-		// 	event.preventDefault();
-		// 	$('nav').addClass('open');
-		// })
+		$('.menu-trigger').click(function(event){
+			event.preventDefault();
+			$('body').toggleClass('hidden');
+			$(this).closest('header').toggleClass('open');
+		})
 		// $('.nav-close').click(function(event){
 		// 	event.preventDefault();
 		// 	$('nav').removeClass('open');
@@ -17,6 +18,79 @@ var common = {
 		
 		// var bLazy = new Blazy({});
 
+		$('.tabs-section button').click(function(){
+			if($(this).hasClass('.active') == false) {
+				var tabCnt = '.' + $(this).attr('data-cnt');
+				$('.tabs-section button.active, .tab-cnt').removeClass('active')
+				$(tabCnt).addClass('active')
+				$(this).addClass('active');
+				var bLazy = new Blazy({});
+			}
+		});
+		var bLazy = new Blazy({});
+		$('.owl-carousel').on('changed.owl.carousel', function(event) {
+			var bLazy = new Blazy({});
+		})
+		$('.form-row input').keyup(function(){
+			if($(this).val() == '') {
+				$(this).closest('.form-row').removeClass('active')
+			}else {$(this).closest('.form-row').addClass('active')}
+		});
+
+		$('.call-popup').click(function(event){
+			event.preventDefault();
+			var popup  = '#' + $(this).attr('data-popup');
+			if($(this).attr('data-popup') != 'polyticsPopup'){
+				$('.popup-wrapper').removeClass('active');
+				$('header').removeClass('open');
+				$('body').addClass('hidden');
+				$(popup).addClass('active');
+				$(popup).find('.work-popup-slider').owlCarousel('destroy');
+				setTimeout(function(){
+					$(popup).find('.work-popup-slider').owlCarousel({
+						items:1,
+						margin: 0,
+						autoHeight:true,
+						lazyLoad: true,
+						nav: false,
+						dots: true
+					});
+				}, 200)
+
+			}else {
+				$(popup).addClass('active');
+				$('header').removeClass('open');
+			}
+
+		});
+
+		
+		$('.popup-close').click(function(){
+			$(this).closest('.popup-wrapper').removeClass('active');
+			$('body').removeClass('hidden');
+		})
+
+		$('.tel-trigger').mask("+7(999) 999-99-99");
+
+		function fixedHead() {
+			$('header').addClass('fixed');
+			$('body').css({'margin-top':$('header').outerHeight()})
+		};
+
+		fixedHead();
+
+		$(window).resize(function() {
+			fixedHead();
+		});
+		
+		$('.anchor').click(function(event){
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top - 100}, 3000);
+			$('.menu-trigger').removeClass('open');
+			$('header').removeClass('open');
+		});
 
 	},
 	owl: function(){
