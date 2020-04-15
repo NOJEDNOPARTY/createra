@@ -27,6 +27,20 @@ var common = {
 				var bLazy = new Blazy({});
 			}
 		});
+
+
+		jQuery(function($){
+			$(document).mouseup(function (e){ 
+				var popup = $(".popup");
+				if (!popup.is(e.target) 
+					&& popup.has(e.target).length === 0) { 
+					$('.popup-wrapper').removeClass('active');
+					$('body').removeClass('hidden');
+				}
+			});
+		});
+
+
 		var bLazy = new Blazy({});
 		$('.owl-carousel').on('changed.owl.carousel', function(event) {
 			var bLazy = new Blazy({});
